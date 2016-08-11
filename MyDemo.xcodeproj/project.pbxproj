@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4CDADA15ACFB54839BD5FF96 /* libPods-MyDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C2F4EF9A1A1CC3660148BA91 /* libPods-MyDemo.a */; };
+		A47F759C1D5CE1DD00020891 /* WJJToolFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = A47F759B1D5CE1DD00020891 /* WJJToolFactory.m */; };
+		A47F759F1D5CE1F800020891 /* AFNetworkViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A47F759E1D5CE1F800020891 /* AFNetworkViewController.m */; };
 		F3E8AA5A1D4AE033003FA346 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F3E8AA591D4AE033003FA346 /* main.m */; };
 		F3E8AA5D1D4AE033003FA346 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F3E8AA5C1D4AE033003FA346 /* AppDelegate.m */; };
 		F3E8AA601D4AE033003FA346 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F3E8AA5F1D4AE033003FA346 /* ViewController.m */; };
@@ -15,6 +18,9 @@
 		F3E8AA681D4AE033003FA346 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F3E8AA661D4AE033003FA346 /* LaunchScreen.storyboard */; };
 		F3E8AA731D4AE034003FA346 /* MyDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F3E8AA721D4AE034003FA346 /* MyDemoTests.m */; };
 		F3E8AA7E1D4AE034003FA346 /* MyDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = F3E8AA7D1D4AE034003FA346 /* MyDemoUITests.m */; };
+		F3E8AB021D4B4163003FA346 /* HttpRequestClient.m in Sources */ = {isa = PBXBuildFile; fileRef = F3E8AB011D4B4163003FA346 /* HttpRequestClient.m */; };
+		F3E8AB061D4C8D38003FA346 /* JSONKit.m in Sources */ = {isa = PBXBuildFile; fileRef = F3E8AB051D4C8D38003FA346 /* JSONKit.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		F3E8AB101D4C8F38003FA346 /* APPWebService.m in Sources */ = {isa = PBXBuildFile; fileRef = F3E8AB0F1D4C8F38003FA346 /* APPWebService.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,7 +40,27 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		F3E8AAFD1D4B3306003FA346 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		211EE2CA9699EACD432F876F /* Pods-MyDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MyDemo/Pods-MyDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		A47F759A1D5CE1DD00020891 /* WJJToolFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WJJToolFactory.h; sourceTree = "<group>"; };
+		A47F759B1D5CE1DD00020891 /* WJJToolFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WJJToolFactory.m; sourceTree = "<group>"; };
+		A47F759D1D5CE1F800020891 /* AFNetworkViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFNetworkViewController.h; sourceTree = "<group>"; };
+		A47F759E1D5CE1F800020891 /* AFNetworkViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFNetworkViewController.m; sourceTree = "<group>"; };
+		B79CF070136BB9FA05A93312 /* Pods-MyDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-MyDemo/Pods-MyDemo.release.xcconfig"; sourceTree = "<group>"; };
+		C2F4EF9A1A1CC3660148BA91 /* libPods-MyDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MyDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F3E8AA551D4AE033003FA346 /* MyDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F3E8AA591D4AE033003FA346 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		F3E8AA5B1D4AE033003FA346 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -51,6 +77,12 @@
 		F3E8AA791D4AE034003FA346 /* MyDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F3E8AA7D1D4AE034003FA346 /* MyDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyDemoUITests.m; sourceTree = "<group>"; };
 		F3E8AA7F1D4AE034003FA346 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F3E8AB001D4B4163003FA346 /* HttpRequestClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HttpRequestClient.h; sourceTree = "<group>"; };
+		F3E8AB011D4B4163003FA346 /* HttpRequestClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HttpRequestClient.m; sourceTree = "<group>"; };
+		F3E8AB041D4C8D38003FA346 /* JSONKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONKit.h; sourceTree = "<group>"; };
+		F3E8AB051D4C8D38003FA346 /* JSONKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONKit.m; sourceTree = "<group>"; };
+		F3E8AB0E1D4C8F38003FA346 /* APPWebService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APPWebService.h; sourceTree = "<group>"; };
+		F3E8AB0F1D4C8F38003FA346 /* APPWebService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APPWebService.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +90,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4CDADA15ACFB54839BD5FF96 /* libPods-MyDemo.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +111,32 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5BA6C5D52D70A81F0EB6F591 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C2F4EF9A1A1CC3660148BA91 /* libPods-MyDemo.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A47F75991D5CE1DD00020891 /* WJJToolClass */ = {
+			isa = PBXGroup;
+			children = (
+				A47F759A1D5CE1DD00020891 /* WJJToolFactory.h */,
+				A47F759B1D5CE1DD00020891 /* WJJToolFactory.m */,
+			);
+			path = WJJToolClass;
+			sourceTree = "<group>";
+		};
+		C083BB97FC3049B0D2FBE09E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				211EE2CA9699EACD432F876F /* Pods-MyDemo.debug.xcconfig */,
+				B79CF070136BB9FA05A93312 /* Pods-MyDemo.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		F3E8AA4C1D4AE033003FA346 = {
 			isa = PBXGroup;
 			children = (
@@ -85,6 +144,8 @@
 				F3E8AA711D4AE034003FA346 /* MyDemoTests */,
 				F3E8AA7C1D4AE034003FA346 /* MyDemoUITests */,
 				F3E8AA561D4AE033003FA346 /* Products */,
+				C083BB97FC3049B0D2FBE09E /* Pods */,
+				5BA6C5D52D70A81F0EB6F591 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -101,6 +162,10 @@
 		F3E8AA571D4AE033003FA346 /* MyDemo */ = {
 			isa = PBXGroup;
 			children = (
+				F3E8AAFE1D4B34A8003FA346 /* UnitlClass */,
+				F3E8AAF11D4B301B003FA346 /* Frameworks */,
+				F3E8AA8F1D4B2D7A003FA346 /* OpenSource */,
+				F3E8AA8B1D4AE8D7003FA346 /* MyViewController */,
 				F3E8AA5B1D4AE033003FA346 /* AppDelegate.h */,
 				F3E8AA5C1D4AE033003FA346 /* AppDelegate.m */,
 				F3E8AA5E1D4AE033003FA346 /* ViewController.h */,
@@ -140,6 +205,59 @@
 			path = MyDemoUITests;
 			sourceTree = "<group>";
 		};
+		F3E8AA8B1D4AE8D7003FA346 /* MyViewController */ = {
+			isa = PBXGroup;
+			children = (
+				A47F759D1D5CE1F800020891 /* AFNetworkViewController.h */,
+				A47F759E1D5CE1F800020891 /* AFNetworkViewController.m */,
+			);
+			path = MyViewController;
+			sourceTree = "<group>";
+		};
+		F3E8AA8F1D4B2D7A003FA346 /* OpenSource */ = {
+			isa = PBXGroup;
+			children = (
+				F3E8AB031D4C8D38003FA346 /* JSONKit */,
+			);
+			path = OpenSource;
+			sourceTree = "<group>";
+		};
+		F3E8AAF11D4B301B003FA346 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F3E8AAFE1D4B34A8003FA346 /* UnitlClass */ = {
+			isa = PBXGroup;
+			children = (
+				A47F75991D5CE1DD00020891 /* WJJToolClass */,
+				F3E8AAFF1D4B34D4003FA346 /* NetworkClass */,
+			);
+			path = UnitlClass;
+			sourceTree = "<group>";
+		};
+		F3E8AAFF1D4B34D4003FA346 /* NetworkClass */ = {
+			isa = PBXGroup;
+			children = (
+				F3E8AB001D4B4163003FA346 /* HttpRequestClient.h */,
+				F3E8AB011D4B4163003FA346 /* HttpRequestClient.m */,
+				F3E8AB0E1D4C8F38003FA346 /* APPWebService.h */,
+				F3E8AB0F1D4C8F38003FA346 /* APPWebService.m */,
+			);
+			path = NetworkClass;
+			sourceTree = "<group>";
+		};
+		F3E8AB031D4C8D38003FA346 /* JSONKit */ = {
+			isa = PBXGroup;
+			children = (
+				F3E8AB041D4C8D38003FA346 /* JSONKit.h */,
+				F3E8AB051D4C8D38003FA346 /* JSONKit.m */,
+			);
+			path = JSONKit;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -147,9 +265,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F3E8AA821D4AE034003FA346 /* Build configuration list for PBXNativeTarget "MyDemo" */;
 			buildPhases = (
+				CFDDC9EB8F4C435EA9A9D5EF /* [CP] Check Pods Manifest.lock */,
 				F3E8AA511D4AE033003FA346 /* Sources */,
 				F3E8AA521D4AE033003FA346 /* Frameworks */,
 				F3E8AA531D4AE033003FA346 /* Resources */,
+				F3E8AAFD1D4B3306003FA346 /* Embed Frameworks */,
+				02F5B699472D34BAA39324F6 /* [CP] Embed Pods Frameworks */,
+				556370372319B9E86B507D4B /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -268,14 +390,67 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		02F5B699472D34BAA39324F6 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MyDemo/Pods-MyDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		556370372319B9E86B507D4B /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MyDemo/Pods-MyDemo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CFDDC9EB8F4C435EA9A9D5EF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		F3E8AA511D4AE033003FA346 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F3E8AB101D4C8F38003FA346 /* APPWebService.m in Sources */,
 				F3E8AA601D4AE033003FA346 /* ViewController.m in Sources */,
+				F3E8AB061D4C8D38003FA346 /* JSONKit.m in Sources */,
+				A47F759C1D5CE1DD00020891 /* WJJToolFactory.m in Sources */,
+				A47F759F1D5CE1F800020891 /* AFNetworkViewController.m in Sources */,
 				F3E8AA5D1D4AE033003FA346 /* AppDelegate.m in Sources */,
 				F3E8AA5A1D4AE033003FA346 /* main.m in Sources */,
+				F3E8AB021D4B4163003FA346 /* HttpRequestClient.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -367,6 +542,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -406,6 +582,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
@@ -416,23 +593,39 @@
 		};
 		F3E8AA831D4AE034003FA346 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 211EE2CA9699EACD432F876F /* Pods-MyDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/MyDemo",
+				);
+				HEADER_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = MyDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = "$(inherited)";
 				PRODUCT_BUNDLE_IDENTIFIER = com.wujiajia.MyDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "";
 			};
 			name = Debug;
 		};
 		F3E8AA841D4AE034003FA346 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B79CF070136BB9FA05A93312 /* Pods-MyDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/MyDemo",
+				);
+				HEADER_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = MyDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = "$(inherited)";
 				PRODUCT_BUNDLE_IDENTIFIER = com.wujiajia.MyDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "";
 			};
 			name = Release;
 		};
@@ -501,6 +694,7 @@
 				F3E8AA841D4AE034003FA346 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F3E8AA851D4AE034003FA346 /* Build configuration list for PBXNativeTarget "MyDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -509,6 +703,7 @@
 				F3E8AA871D4AE034003FA346 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F3E8AA881D4AE034003FA346 /* Build configuration list for PBXNativeTarget "MyDemoUITests" */ = {
 			isa = XCConfigurationList;
@@ -517,6 +712,7 @@
 				F3E8AA8A1D4AE034003FA346 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

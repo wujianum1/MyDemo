@@ -8,15 +8,24 @@
 
 #import "AppDelegate.h"
 
+#import "AFNetworkActivityIndicatorManager.h"
+
 @interface AppDelegate ()
 
 @end
 
 @implementation AppDelegate
-
+  
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    
+    NSURLCache *URLCache = [[NSURLCache alloc] initWithMemoryCapacity:4 * 1024 * 1024 diskCapacity:20 * 1024 * 1024 diskPath:nil];
+    [NSURLCache setSharedURLCache:URLCache];
+    
+    // 在通知栏自动显示网络连接、关闭状态
+    [[AFNetworkActivityIndicatorManager sharedManager].isEnabled = YES;
+    
     return YES;
 }
 
