@@ -17,6 +17,7 @@
 {
     UITextField *editedTF; // 标记当前编辑的textfield
     WJJProgressHUD *proHud; // 数据加载指示器
+    UIView *testView;
 }
 
 @property (weak, nonatomic) IBOutlet UITextField *userNameTextField;
