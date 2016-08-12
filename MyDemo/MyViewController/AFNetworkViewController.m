@@ -4,7 +4,6 @@
 //
 //  Created by Joker on 16/7/29.
 //  Copyright © 2016年 Joker. All rights reserved.
-//  测试--试试看能否同步
 
 #import "AFNetworkViewController.h"
 
@@ -17,7 +16,6 @@
 {
     UITextField *editedTF; // 标记当前编辑的textfield
     WJJProgressHUD *proHud; // 数据加载指示器
-    UIView *testView;
 }
 
 @property (weak, nonatomic) IBOutlet UITextField *userNameTextField;
