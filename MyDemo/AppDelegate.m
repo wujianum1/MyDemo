@@ -24,7 +24,7 @@
     [NSURLCache setSharedURLCache:URLCache];
     
     // 在通知栏自动显示网络连接、关闭状态
-    [[AFNetworkActivityIndicatorManager sharedManager].isEnabled = YES;
+    [[AFNetworkActivityIndicatorManager sharedManager] setEnabled:YES];
     
     return YES;
 }

@@ -11,10 +11,12 @@
 #import "APPWebService.h"
 
 #import "WJJToolFactory.h"
+#import "WJJProgressHUD.h"
 
 @interface AFNetworkViewController ()<UITextFieldDelegate>
 {
     UITextField *editedTF; // 标记当前编辑的textfield
+    WJJProgressHUD *proHud; // 数据加载指示器
 }
 
 @property (weak, nonatomic) IBOutlet UITextField *userNameTextField;
@@ -60,14 +62,16 @@
     NSString *passWord = self.passWordTextField.text;
     
     if ([WJJToolFactory isBlankWithString:userName]) {
-        NSLog(@"用户名不能为空");
+        [WJJProgressHUD showTipTextWithView:self.navigationController.view text:@"账号不能为空"];
         return;
     }
     
     if ([WJJToolFactory isBlankWithString:passWord]) {
-        NSLog(@"密码不能为空");
+        [WJJProgressHUD showTipTextWithView:self.navigationController.view text:@"密码不能为空"];
         return;
     }
+    
+    proHud = [WJJProgressHUD showLoadingWithView:self.navigationController.view text:@"登录中..."];
     [self.webService userLogin:userName passWord:passWord reslut:^(id reslut, NSError *error) {
         if (error) {
             NSLog(@"%@:%@ 错误代码",self.class,error.description);
@@ -88,9 +92,12 @@
 #pragma mark -- 网络请求 --
 /** 获取用户数据 */
 -(void)getUserInfo:(NSString *)userName{
+    __block AFNetworkViewController *blockSelf = self;
     [self.webService getUserInfoWithUserName:userName reslut:^(id reslut, NSError *error) {
 //        NSLog(@"UserInfo:%@",reslut);
         _contentTextView.text = [NSString stringWithFormat:@"%@",reslut];
+        
+        [blockSelf->proHud hideHUD];
     }];
 }
 
